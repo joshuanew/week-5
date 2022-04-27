@@ -23,11 +23,11 @@ code to complete this exercise.
 
 */
 
-function getRandomInt(min, max) {
+const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
-}
+};
 
-function rollDice() {
+const rollDice = () => {
   let numRandom1 = getRandomInt(1, 6);
   // console.log(numRandom1);
   let numRandom2 = getRandomInt(1, 6);
@@ -42,7 +42,7 @@ function rollDice() {
 
   elementFirstDie.className = `dice ${classNameFirstDie}`;
   elementSecondDie.className = `dice ${classNameSecondDie}`;
-}
+};
 
 const button = document.querySelector('#roll-dice');
 
